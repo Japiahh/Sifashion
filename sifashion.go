@@ -313,7 +313,7 @@ func hapusproduk(banyakdatasaatini *int, d *tabproduk) {
 		fmt.Scan(&n)
 		if n == "y" {
 			for i = ad; i < *banyakdatasaatini - 1; i++ {
-				d[i] = d[i+1]
+				d[i] = d[i + 1]
 			}
 			*banyakdatasaatini = *banyakdatasaatini - 1
 			fmt.Println("Data berhasil dihapus!")
