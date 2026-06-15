@@ -74,8 +74,7 @@ func lihatdataproduk(banyakdatasaatini int, d tabproduk) {
 }
 
 func lihatproduk(banyakdatasaatini int, d *tabproduk) {
-    var n string
-    var m string
+    var n, m string
     fmt.Printf("\n#Lihat Produk \n")
     fmt.Println(".../lihat_Produk \n")
     lihatdataproduk(banyakdatasaatini, *d)
@@ -103,7 +102,7 @@ func lihatproduk(banyakdatasaatini int, d *tabproduk) {
             
         } else if n == "stk" {
             fmt.Printf("\ninput[up/dn]> ")
-            fmt.Scan(&sub)
+            fmt.Scan(&m)
             for m != "up" && m != "dn" {
                 fmt.Println("Pilihan tidak valid! Coba lagi...")
                 fmt.Printf("\ninput[up/dn]> ")
@@ -233,7 +232,7 @@ func editproduk(banyakdatasaatini int, d *tabproduk) {
 	} else {
 		fmt.Printf("\n \nData ditemukan : \n \n")
 		fmt.Printf("\n%-20s | %-20s | %-20s | %-20s | %-20s\n", "Kategori", "Ukuran", "Warna", "Harga", "stok")
-		fmt.Printf("%-20s | %-20d | %-20s | %-20.2f | %-20d\n", d[i].kategori, d[i].ukuran, d[i].warna, d[i].harga, d[i].stok)
+		fmt.Printf("%-20s | %-20d | %-20s | %-20.2f | %-20d\n", d[namal].kategori, d[namal].ukuran, d[namal].warna, d[namal].harga, d[namal].stok)
 		fmt.Printf("\nconfirm[n/any]> ")
 		fmt.Scan(&n)
 		if n == "n" {
