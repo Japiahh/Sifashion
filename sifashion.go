@@ -53,6 +53,7 @@ func tambahproduk(banyakdatasaatini *int, d *tabproduk) {
 			for !(wr < 6 && wr > 0) {
 				fmt.Println("Pilihan tidak valid! Coba lagi...")
 				tabelwarnadankategori(1, 0)
+				fmt.Printf("\nWarna[1/2/3/4/5]> ")
 				fmt.Scan(&wr)
 			}
 			d[i].warna = comp(wr, 0)
