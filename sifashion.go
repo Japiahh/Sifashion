@@ -75,7 +75,7 @@ func lihatdataproduk(banyakdatasaatini int, d tabproduk) {
 
 func lihatproduk(banyakdatasaatini int, d *tabproduk) {
     var n string
-    var sub string
+    var m string
     fmt.Printf("\n#Lihat Produk \n")
     fmt.Println(".../lihat_Produk \n")
     lihatdataproduk(banyakdatasaatini, *d)
@@ -85,17 +85,17 @@ func lihatproduk(banyakdatasaatini int, d *tabproduk) {
         fmt.Scan(&n)
         if n == "hrg" {
             fmt.Printf("\ninput[up/dn]> ")
-            fmt.Scan(&sub)
-            for sub != "up" && sub != "dn" {
+            fmt.Scan(&m)
+            for m != "up" && m != "dn" {
                 fmt.Println("Pilihan tidak valid! Coba lagi...")
                 fmt.Printf("\ninput[up/dn]> ")
-                fmt.Scan(&sub)
+                fmt.Scan(&m)
             }
-            if sub == "dn" {
+            if m == "dn" {
                 decending(d, 1, 0, banyakdatasaatini)
                 fmt.Println("Data yang diurutkan (descending) : ")
                 lihatdataproduk(banyakdatasaatini, *d)
-            } else if sub == "up" {
+            } else if m == "up" {
                 acending(d, 1, 0, 0, banyakdatasaatini)
                 fmt.Println("Data yang diurutkan (ascending) : ")
                 lihatdataproduk(banyakdatasaatini, *d)
@@ -104,16 +104,16 @@ func lihatproduk(banyakdatasaatini int, d *tabproduk) {
         } else if n == "stk" {
             fmt.Printf("\ninput[up/dn]> ")
             fmt.Scan(&sub)
-            for sub != "up" && sub != "dn" {
+            for m != "up" && m != "dn" {
                 fmt.Println("Pilihan tidak valid! Coba lagi...")
                 fmt.Printf("\ninput[up/dn]> ")
-                fmt.Scan(&sub)
+                fmt.Scan(&m)
             }
-            if sub == "dn" {
+            if m == "dn" {
                 decending(d, 0, 1, banyakdatasaatini)
                 fmt.Println("Data yang diurutkan (descending) : ")
                 lihatdataproduk(banyakdatasaatini, *d)
-            } else if sub == "up" {
+            } else if m == "up" {
                 acending(d, 0, 0, 1, banyakdatasaatini)
                 fmt.Println("Data yang diurutkan (ascending) : ")
                 lihatdataproduk(banyakdatasaatini, *d)
