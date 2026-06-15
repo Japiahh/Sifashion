@@ -232,7 +232,8 @@ func editproduk(banyakdatasaatini int, d *tabproduk) {
 		}
 	} else {
 		fmt.Printf("\n \nData ditemukan : \n \n")
-		lihatdataproduk(1, tabproduk{d[namal]})
+		fmt.Printf("\n%-20s | %-20s | %-20s | %-20s | %-20s\n", "Kategori", "Ukuran", "Warna", "Harga", "stok")
+		fmt.Printf("%-20s | %-20d | %-20s | %-20.2f | %-20d\n", d[i].kategori, d[i].ukuran, d[i].warna, d[i].harga, d[i].stok)
 		fmt.Printf("\nconfirm[n/any]> ")
 		fmt.Scan(&n)
 		if n == "n" {
