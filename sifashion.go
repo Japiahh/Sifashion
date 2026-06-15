@@ -306,8 +306,8 @@ func hapusproduk(banyakdatasaatini *int, d *tabproduk) {
 		}
 	} else {
 		fmt.Printf("\n\nData ditemukan : \n\n")
-		fmt.Printf("\n%-20s %-20s %-20s %-20s, %-20s\n", "Kategori", "Ukuran", "Warna", "Harga", "stok")
-		fmt.Printf("%-20s %-20d %-20s %-20.2f, %-20d\n", d[ad].kategori, d[ad].ukuran, d[ad].warna, d[ad].harga, d[ad].stok)
+		fmt.Printf("\n%-20s | %-20s | %-20s | %-20s | %-20s\n", "Kategori", "Ukuran", "Warna", "Harga", "stok")
+		fmt.Printf("%-20s | %-20d | %-20s | %-20.2f | %-20d\n", d[ad].kategori, d[ad].ukuran, d[ad].warna, d[ad].harga, d[ad].stok)
 		fmt.Printf("\nconfirm[y/any]> ")
 		fmt.Scan(&n)
 		if n == "y" {
