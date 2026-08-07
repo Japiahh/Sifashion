@@ -592,7 +592,7 @@ func main() {
 		} else if pilih == 5 {
 			fmt.Printf("\n\nProgram selesai.")
 		} else {
-			fmt.Println("Pilihan tidak valid! Coba lagi")
+			fmt.Println("Pilihan tidak valid! Coba lagi...")
 		}
 	}
 }
